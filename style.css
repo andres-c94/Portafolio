@@ -1,0 +1,94 @@
+.bar{
+    background-color:#2e2f30;
+    width: 100%;
+    height: 3rem;
+}
+
+.bar a{
+    text-decoration: none;
+    color: #c8d4b1;
+    margin-left: 50px;
+    font-size: 25px;
+    
+}
+
+.bar a:hover{
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ce9178;
+}
+
+
+.imagen{
+    
+    animation-delay: 5s;
+    animation-name: mover;
+    animation-duration: 2s;
+    position: relative;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes mover {
+
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+        }
+
+    
+  }
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#46c756;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+    z-index:100;
+    box-shadow: 0px 0px 0px 1px teal;
+}
+.float:hover {
+	text-decoration: none;
+	color: #46c756;
+    background-color:#fff;
+    width: 61px;
+    height: 61px;
+    box-shadow: 0px 0px 0px 5px teal;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+.card:hover{
+    box-shadow: 2px 2px 2px 4px teal;
+    width: 25.3rem !important;
+    height: 19.5rem !important;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bar {
+    margin: auto;
+    overflow:hidden;
+  }
